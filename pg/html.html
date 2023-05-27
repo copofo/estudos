@@ -64,14 +64,27 @@
         background-color: gray;
         width: 100%;
         color: white;
+        padding: 10px;
        }
 
-       .code p {
-        color: rgb(59, 59, 59);
+       .coment{
+        color: rgb(61, 61, 61);
        }
        
        p{
         margin: 5px 0;
+       }
+
+       .att{
+        color: green;
+       }
+
+       .attConten{
+        color: orangered;
+       }
+
+       .conten{
+        color: blue;
        }
     </style>
 
@@ -107,12 +120,31 @@
                 <div class="code">
                     
                 <code>
-                    &lt;<strong>a</strong>&gt;Conteúdo&lt;&frasl;<strong>a</strong>&gt;
+                    &lt;<strong>a</strong>&gt;<span class="conten">Conteúdo</span>&lt;&frasl;<strong>a</strong>&gt;
 
-                    <p>&lt;!-- Aqui vem um comentário --&gt;</p>
+                    <p><span class="coment">&lt;!-- Aqui vem um comentário --&gt;</span></p>
                 </code>
                     
                 </div>
+
+                <h3>Atributos</h3>
+                <p>Adicionam informações e/ou configurações a uma tag</p>
+
+                <p>
+                    <strong>
+                        Como escrevemos atributos?
+                    </strong>
+                </p>
+
+                <div class="code">
+                    <code>
+                        <p>&lt;<strong>a</strong> <strong class="att">href=</strong><span class="attConten">"https://google.com"</span>&gt;<span class="conten">Ir para o Google</span>&lt;&frasl;<strong>a</strong>&gt;</p>
+
+                        <p>&lt;<strong>img</strong> <strong class="att">src=</strong>"imagem.png" alt="exemplo de texto alernativo"&gt;</p>
+                    </code>
+                </div>
+
+
 
 
             </ul>
